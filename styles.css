@@ -1,0 +1,112 @@
+:root {
+	--col-dark: #24232c;
+	--col-black: #18171f;
+	--col-gray: #817d92;
+	--col-white: #e6e5ea;
+	--col-yellow: #f8cd65;
+	--col-orange: #fb7c58;
+	--col-red: #f64a4a;
+	--col-green: #a4ffaf;
+
+	--ff-primary: 'JetBrains Mono';
+	--ff-fallback: monospace;
+}
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+.flex {
+	display: flex;
+}
+.column {
+	flex-direction: column;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--col-black);
+	color: var(--col-white);
+	font-family: var(--ff-primary), var(--ff-fallback);
+}
+
+.main-container {
+	padding: 1rem;
+}
+.heading {
+}
+.pw-copy,
+.pw-body {
+	background-color: var(--col-dark);
+}
+.pw-copy {
+	padding-inline: 1.5rem;
+	margin-bottom: 1.5rem;
+	justify-content: space-between;
+}
+#password {
+}
+#copy {
+	background-color: var(--col-dark);
+	border: none;
+}
+.pw-body {
+	padding: 1.5rem;
+}
+.sliderContainer {
+	width: 100%;
+}
+.charLength {
+	display: flex;
+	justify-content: space-between;
+}
+#lengthNum {
+}
+input[type='range'] {
+	width: 100%;
+
+	/* Apply common styles using standard properties */
+	&::-webkit-slider-thumb,
+	&::-moz-range-thumb {
+		background-color: red;
+		border: 5px solid #777;
+		/* border-radius: 50%; */
+		cursor: pointer;
+	}
+}
+/* .slider {
+	width: 100%;
+	-webkit-appearance: none;
+	background-color: var(--col-black);
+	height: 0.5rem;
+}
+.slider::-webkit-slider-thumb {
+	height: 1.5rem;
+	background: aquamarine;
+} */
+#length {
+}
+#copy {
+}
+.pw-body {
+}
+.form-control {
+}
+.strengthBox {
+}
+.strBoxes {
+}
+#pwStr {
+}
+#tooWeak {
+}
+#weak {
+}
+#medium {
+}
+#strong {
+}
+.generate {
+}

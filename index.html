@@ -5,55 +5,65 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Password generator app</title>
 	</head>
+
 	<body>
-		<div class="pw-container">
-			<div class="pw-header">
-				<div class="pw">
-					<span id="pw">l823Zs78#Css09@</span>
-					<button id="copy">Copy</button>
-				</div>
+		<div class="main-container">
+			<!-- heading -->
+			<p class="heading">Password Generator</p>
+			<!-- little header (narrow container) with a generated password and an option to copy it -->
+
+			<div class="pw-copy flex">
+				<p id="password">PTx1f5DaFX</p>
+				<button type="button" id="copy"><img src="/assets/icon-copy.svg" /></button>
 			</div>
-			<div class="pw-body">
-				<div class="form-control">
-					<label for="len">Password Length</label>
-					<input id="len" value="15" type="number" min="2" max="30" />
+
+			<!-- there you can choose password  () -->
+			<div class="pw-body flex column">
+				<div class="sliderContainer">
+					<label class="charLength" for="length"
+						>Character Length <span id="lengthNum">0</span></label
+					>
+					<input class="slider" id="slider" value="0" type="range" min="6" max="25" />
 				</div>
 				<div class="form-control">
-					<label for="upper">Contain Uppercase Letters</label>
 					<input id="upper" type="checkbox" />
+					<label for="upper">Include Uppercase Letters</label>
 				</div>
 				<div class="form-control">
-					<label for="lower">Contain Lowercase Letters</label>
 					<input id="lower" type="checkbox" />
+					<label for="lower">Include Lowercase Letters</label>
 				</div>
 				<div class="form-control">
-					<label for="number">Contain Numbers</label>
 					<input id="number" type="checkbox" />
+					<label for="number">Include Numbers</label>
 				</div>
 				<div class="form-control">
-					<label for="symbol">Contain Symbols</label>
 					<input id="symbol" type="checkbox" />
+					<label for="symbol">Include Symbols</label>
 				</div>
-				<button class="generate" id="generate">Generate Password</button>
+
+				<div class="strengthBox">
+					<p>Strength</p>
+					<div class="srtBoxes">
+						<p id="pwStr">MEDIUM</p>
+						<div id="tooWeak1"></div>
+						<div id="weak2"></div>
+						<div id="medium3"></div>
+						<div id="strong4"></div>
+					</div>
+				</div>
+
+				<button class="generate" id="generate">Generate</button>
 			</div>
 		</div>
-		<!--
-  Password Generator
-
-  P4$5W0rD!
-
-  Character Length
-
-  Include Uppercase Letters
-  Include Lowercase Letters
-  Include Numbers
-  Include Symbols
-
-  Strength
-
-  Generate -->
 	</body>
 </html>
