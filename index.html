@@ -28,11 +28,12 @@
 
 			<!-- there you can choose password  () -->
 			<div class="pw-body flex column">
+				<!-- range slider container - text & slider there -->
 				<div class="sliderContainer">
-					<label class="charLength" for="length"
-						>Character Length <span id="lengthNum">0</span></label
-					>
-					<input class="slider" id="slider" value="0" type="range" min="6" max="25" />
+					<label class="charLength" for="slider">Character Length <span id="value">0</span></label>
+					<!-- it's a slider itself -->
+					<input class="slider" id="slider" value="0" type="range" min="0" max="20" />
+					<div id="progressBar"></div>
 				</div>
 				<div class="form-control">
 					<input id="upper" type="checkbox" />
@@ -53,17 +54,28 @@
 
 				<div class="strengthBox">
 					<p>Strength</p>
-					<div class="srtBoxes">
-						<p id="pwStr">MEDIUM</p>
-						<div id="tooWeak1"></div>
-						<div id="weak2"></div>
-						<div id="medium3"></div>
-						<div id="strong4"></div>
+					<p id="pwStr">MEDIUM</p>
+					<div class="srtBoxes flex">
+						<div id="tooWeak1" class="ltbox"></div>
+						<div id="weak2" class="ltbox"></div>
+						<div id="medium3" class="ltbox"></div>
+						<div id="strong4" class="ltbox"></div>
 					</div>
 				</div>
 
 				<button class="generate" id="generate">Generate</button>
 			</div>
 		</div>
+		<!-- <script>
+			var progressBar = document.getElementById('SelectValue')
+
+			SelectValue.innerHTML = slider.value
+
+			slider.oninput = function () {
+				SelectValue.innerHTML = this.value
+				progressBar.style.width = this.value + '%'
+			}
+		</script> -->
+		<script src="./main.js"></script>
 	</body>
 </html>

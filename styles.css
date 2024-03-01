@@ -47,6 +47,7 @@ body {
 	justify-content: space-between;
 }
 #password {
+	font-size: 1.5rem;
 }
 #copy {
 	background-color: var(--col-dark);
@@ -57,37 +58,54 @@ body {
 }
 .sliderContainer {
 	width: 100%;
+	position: relative;
+	margin-bottom: 1rem;
 }
 .charLength {
 	display: flex;
 	justify-content: space-between;
 }
-#lengthNum {
+#value {
+	color: var(--col-green);
 }
-input[type='range'] {
+.slider {
 	width: 100%;
-
-	/* Apply common styles using standard properties */
-	&::-webkit-slider-thumb,
-	&::-moz-range-thumb {
-		background-color: red;
-		border: 5px solid #777;
-		/* border-radius: 50%; */
-		cursor: pointer;
-	}
-}
-/* .slider {
-	width: 100%;
-	-webkit-appearance: none;
-	background-color: var(--col-black);
+	cursor: pointer;
+	appearance: none;
 	height: 0.5rem;
+	outline: none;
+	background: linear-gradient(90deg, var(--col-black) 60%, var(--col-black) 60%);
 }
+.slider::-moz-range-thumb {
+	width: 28px;
+	height: 28px;
+	background-color: var(--col-white);
+	border-radius: 100%;
+	cursor: pointer;
+	transition: transform 1.5 ease-in-out;
+}
+
 .slider::-webkit-slider-thumb {
-	height: 1.5rem;
-	background: aquamarine;
-} */
-#length {
+	-webkit-appearance: none;
+	width: 28px;
+	height: 28px;
+	background-color: var(--col-white);
+	border-radius: 100%;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
 }
+
+.slider::-webkit-slider-thumb:hover,
+.slider::-webkit-slider-thumb:active {
+	background-color: var(--col-black);
+	border: 1px solid var(--col-green);
+}
+.slider::-moz-range-thumb:hover,
+.slider::-moz-range-thumb:active {
+	background-color: var(--col-black);
+	border: 1px solid var(--col-green);
+}
+
 #copy {
 }
 .pw-body {
@@ -95,8 +113,12 @@ input[type='range'] {
 .form-control {
 }
 .strengthBox {
+	background-color: var(--col-black);
+	display: flex;
+	justify-content: space-between;
 }
 .strBoxes {
+	align-items: center;
 }
 #pwStr {
 }
@@ -108,5 +130,10 @@ input[type='range'] {
 }
 #strong {
 }
-.generate {
+.ltbox {
+	width: 10px;
+	height: 28px;
+	border: 2px solid var(--col-white);
 }
+/* .generate {
+} */
