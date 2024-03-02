@@ -43,18 +43,20 @@ body {
 	background-color: var(--col-black);
 	color: var(--col-white);
 	font-family: var(--ff-primary), var(--ff-fallback);
-	font-size: 1.125rem;
+	font-size: 1rem;
 }
 
 .main-container {
 	padding: 1rem;
 }
 .heading {
+	text-align: center;
 }
 .pw-copy,
 .pw-body {
 	padding: 1rem;
 	background-color: var(--col-dark);
+	width: 375px;
 }
 .pw-copy {
 	margin-bottom: 1.5rem;
@@ -74,11 +76,13 @@ body {
 .sliderContainer {
 	width: 100%;
 	position: relative;
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 .charLength {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 0.75rem;
 }
 #value {
 	color: var(--col-green);
@@ -126,10 +130,16 @@ body {
 .pw-body {
 }
 .form-control {
+	display: flex;
+	gap: 1.125rem;
+}
+.form-control:nth-of-type(5) {
+	margin-bottom: 1.5rem;
 }
 .strengthBox {
 	background-color: var(--col-black);
 	justify-content: space-between;
+	margin-bottom: 1rem;
 }
 .checkedStrength {
 }
@@ -148,9 +158,10 @@ input[type='checkbox'] {
 }
 #strength {
 	align-self: center;
-	margin-left: 1rem;
+	margin: 0 1rem;
 }
 #pwStrength {
+	margin-block: 1.125rem;
 }
 #tooWeak1 {
 }
@@ -165,5 +176,12 @@ input[type='checkbox'] {
 	height: 28px;
 	border: 2px solid var(--col-white);
 }
-/* .generate {
-} */
+.button {
+	width: 100%;
+	height: 3.5rem;
+	background-color: var(--col-green);
+	font-family: var(--ff-primary);
+	font-size: 1.125rem;
+	justify-content: center;
+	gap: 1.5rem;
+}

@@ -18,7 +18,7 @@
 	<body>
 		<div class="main-container">
 			<!-- heading -->
-			<p class="heading heading-md">Password Generator</p>
+			<p class="heading">Password Generator</p>
 			<!-- little header (narrow container) with a generated password and an option to copy it -->
 
 			<div class="pw-copy flex">
@@ -30,7 +30,9 @@
 			<div class="pw-body flex column">
 				<!-- range slider container - text & slider there -->
 				<div class="sliderContainer">
-					<label class="charLength" for="slider">Character Length <span id="value">0</span></label>
+					<label class="charLength" for="slider"
+						>Character Length <span class="heading-md" id="value">0</span></label
+					>
 					<!-- it's a slider itself -->
 					<input class="slider" id="slider" value="0" type="range" min="0" max="20" />
 					<div id="progressBar"></div>
@@ -65,7 +67,10 @@
 					</div>
 				</div>
 
-				<button class="generate" id="generate">Generate</button>
+				<button class="button flex centered" type="button">
+					<p id="generate">Generate</p>
+					<img src="./assets/icon-arrow-right.svg" />
+				</button>
 			</div>
 		</div>
 		<script src="./main.js"></script>
