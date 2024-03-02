@@ -23,6 +23,19 @@
 .column {
 	flex-direction: column;
 }
+.centered {
+	align-items: center;
+}
+.heading-lg {
+	font-size: 2rem;
+}
+.heading-md {
+	font-size: 1.5rem;
+}
+/* .body-md {
+
+} */
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -30,6 +43,7 @@ body {
 	background-color: var(--col-black);
 	color: var(--col-white);
 	font-family: var(--ff-primary), var(--ff-fallback);
+	font-size: 1.125rem;
 }
 
 .main-container {
@@ -39,22 +53,23 @@ body {
 }
 .pw-copy,
 .pw-body {
+	padding: 1rem;
 	background-color: var(--col-dark);
 }
 .pw-copy {
-	padding-inline: 1.5rem;
 	margin-bottom: 1.5rem;
 	justify-content: space-between;
 }
 #password {
 	font-size: 1.5rem;
+	margin: 0;
 }
 #copy {
 	background-color: var(--col-dark);
 	border: none;
 }
 .pw-body {
-	padding: 1.5rem;
+	/* gap: 1rem; */
 }
 .sliderContainer {
 	width: 100%;
@@ -114,21 +129,36 @@ body {
 }
 .strengthBox {
 	background-color: var(--col-black);
-	display: flex;
 	justify-content: space-between;
 }
+.checkedStrength {
+}
 .strBoxes {
+	/* flex-wrap: wrap; */
 	align-items: center;
+	justify-content: space-around;
+	gap: 0.5rem;
+	padding: 1rem;
 }
-#pwStr {
+input[type='checkbox'] {
+	accent-color: var(--col-green);
+	width: 20px;
+	height: 20px;
+	margin-bottom: 1rem;
 }
-#tooWeak {
+#strength {
+	align-self: center;
+	margin-left: 1rem;
 }
-#weak {
+#pwStrength {
 }
-#medium {
+#tooWeak1 {
 }
-#strong {
+#weak2 {
+}
+#medium3 {
+}
+#strong4 {
 }
 .ltbox {
 	width: 10px;

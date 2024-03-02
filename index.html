@@ -18,11 +18,11 @@
 	<body>
 		<div class="main-container">
 			<!-- heading -->
-			<p class="heading">Password Generator</p>
+			<p class="heading heading-md">Password Generator</p>
 			<!-- little header (narrow container) with a generated password and an option to copy it -->
 
 			<div class="pw-copy flex">
-				<p id="password">PTx1f5DaFX</p>
+				<p class="heading-lg" id="password">PTx1f5DaFX</p>
 				<button type="button" id="copy"><img src="/assets/icon-copy.svg" /></button>
 			</div>
 
@@ -52,30 +52,22 @@
 					<label for="symbol">Include Symbols</label>
 				</div>
 
-				<div class="strengthBox">
-					<p>Strength</p>
-					<p id="pwStr">MEDIUM</p>
-					<div class="srtBoxes flex">
-						<div id="tooWeak1" class="ltbox"></div>
-						<div id="weak2" class="ltbox"></div>
-						<div id="medium3" class="ltbox"></div>
-						<div id="strong4" class="ltbox"></div>
+				<div class="strengthBox flex">
+					<p id="strength">Strength</p>
+					<div class="checkedStrength flex">
+						<p class="heading-md" id="pwStrength">MEDIUM</p>
+						<div class="strBoxes flex">
+							<div id="tooWeak1" class="ltbox"></div>
+							<div id="weak2" class="ltbox"></div>
+							<div id="medium3" class="ltbox"></div>
+							<div id="strong4" class="ltbox"></div>
+						</div>
 					</div>
 				</div>
 
 				<button class="generate" id="generate">Generate</button>
 			</div>
 		</div>
-		<!-- <script>
-			var progressBar = document.getElementById('SelectValue')
-
-			SelectValue.innerHTML = slider.value
-
-			slider.oninput = function () {
-				SelectValue.innerHTML = this.value
-				progressBar.style.width = this.value + '%'
-			}
-		</script> -->
 		<script src="./main.js"></script>
 	</body>
 </html>
