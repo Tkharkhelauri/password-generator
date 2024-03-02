@@ -1,1 +1,2 @@
-<img width="522" alt="Screenshot 2024-03-03 at 00 48 24" src="https://github.com/Tkharkhelauri/password-generator/assets/95001028/bf6799cc-d87d-48fa-8d46-b035723f2242">
+
+<img width="501" alt="Screenshot 2024-03-03 at 00 51 50" src="https://github.com/Tkharkhelauri/password-generator/assets/95001028/e3771e79-0372-40f0-a6a1-792d33ec9088">
