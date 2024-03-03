@@ -221,5 +221,9 @@ input[type='checkbox'] {
 		background-color: var(--col-dark);
 		border: 2px solid var(--col-green);
 		color: var(--col-green);
+		fill: var(--col-green);
+	}
+	.button:hover svg path {
+		fill: var(--col-green) !important;
 	}
 }
