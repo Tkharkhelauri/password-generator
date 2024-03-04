@@ -34,7 +34,15 @@
 						>Character Length <span class="heading-md" id="value">0</span></label
 					>
 					<!-- it's a slider itself -->
-					<input class="slider" id="slider" value="0" type="range" min="0" max="20" />
+					<input
+						class="slider"
+						id="slider"
+						value="0"
+						type="range"
+						min="0"
+						max="20"
+						oninput="updateColor(this.value)"
+					/>
 					<div id="progressBar"></div>
 				</div>
 				<div class="form-control">
